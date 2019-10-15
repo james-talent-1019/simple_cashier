@@ -17,7 +17,6 @@ The cashier machine app is an easy web app in which you will have to:
 ## Important Notes
 * index.html MUST NOT be modified. All HTML changes must be done via code.
 
-* The code and, by extension, the boilerplate, is a similar project you will see while working in the project. So, use and help yourself with the [SampleApp](https://github.com/overwolf/sample-app) from [OverWolf](https://overwolf.github.io) to do as close as possible as you would do the app.
 
 ## Happy coding
 Made with ❤️
