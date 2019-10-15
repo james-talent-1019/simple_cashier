@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600");
+body {
+    background: url("../assets/shop-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: -500px;
+    font-family: "Montserrat";
+    overflow-y: hidden;
+}
+
+    #receipt {
+        background: url("../assets/receipt.svg") no-repeat;
+        height: 500px;
+        width: 21%;
+        position: absolute;
+        top: 100px;
+        right: 5%;
+    }
+
+    @media (min-width: 1470px) {
+        #receipt {
+            width: 307px;
+        }
+    }
+
+        .title {
+            width: 100%;
+            border-bottom: 1px solid #3b3b3b;
+            display: block;
+            padding-top: 50px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+            #log-container {
+                overflow-y: auto;
+                height: 360px;
+            }
+                .receipt-item {
+                    padding: 10px 20px;
+                }
+
+                    .item-value {
+                        float: right;
+                    }
+
+                .receipt-total-item {
+                    padding: 10px 20px;
+                    border-top: 1px dashed black;
+                    text-align: right;
+                    font-weight: 600;
+                }
+
+    .table {
+        background: url("../assets/table.svg") no-repeat;
+        height: 800px;
+        width: 700px;
+        margin-top: -180px;
+    }
+
+    .cashier {
+        background: url("../assets/cashier.svg") no-repeat;
+        height: 600px;
+        width: 600px;
+        margin-left: 50px;
+        position: relative;
+    }
+
+        .show-container {
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            top: 40px;
+            right: 50px;
+        }
+
+            .value {
+                text-align: right;
+                color: #666;
+                font-size: 35px;
+                display: block;
+            }
+
+        .pad-container {
+            padding-top: 350px;
+            padding-left: 25px;
+        }
+
+            button {
+                border-radius: 5px;
+                border-color: transparent;
+                height: 50px;
+                width: 50px;
+                margin-right: 25px;
+            }
+
+            .product {
+                background-color: #2cccff;
+            }
+
+            #clear {
+                background: #ff2f2c url('../assets/close.svg') no-repeat center;
+                margin-left: 50px;
+            }
+
+            #checkout {
+                background: #5bff4c url('../assets/checkout.svg') no-repeat center;
+                float: right;
+            }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cashier App</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="cashier">
+        <div class="show-container">
+            <span id="item-value" class="value">0</span>
+        </div>
+        <div class="pad-container">
+            <button class="product" />
+            <button class="product" />
+            <button class="product" />
+            <button class="product" />
+            <button class="product" />
+
+
+            <button id="clear" >
+                <span class="icon">clear</span>
+            </button>
+            <button id="checkout" >
+                <span class="icon">checkout</span>
+            </button>
+        </div>
+    </div>
+    <div class="table"></div>
+    <div id="receipt">
+        <span class="title">RECEIPT</span>
+        <div id="log-container"></div>
+    </div>
+</div>
+
+<script src="./lib/require.js"></script>
+<script>
+    require(['controllers/CashierController'], function (CashierController) {
+        console.log(`[INIT] cashier module loaded`);
+        const cashierController = new CashierController();
+        cashierController.run();
+    }, function (error) {
+        console.log(`[INIT] failed to load cashier module ${error}`);
+    });
+</script>
+</body>
+</html>
